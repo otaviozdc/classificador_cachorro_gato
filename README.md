@@ -21,24 +21,41 @@ Este projeto é uma aplicação web simples que utiliza técnicas de **Deep Lear
 
 ## Estrutura do Projeto
 
-```
+'''
 .
-├── classificador_final/
-│   ├── classificador_final/
+├── classificador_cachorro_gato/
+│   ├── classificador/
+│   │   ├── pycache/
+│   │   ├── migrations/
+│   │   ├── static/
+│   │   ├── templates/
+│   │   │   └── classificador/ 
+│   │   ├── init.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   ├── tests.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   ├── classificador_cachorro_gato/
+│   │   ├── pycache/
+│   │   ├── init.py
 │   │   ├── asgi.py
 │   │   ├── settings.py
 │   │   ├── urls.py
 │   │   └── wsgi.py
-│   ├── classificador/
-│   │   ├── __init__.py
-│   │   ├── views.py
-│   │   ├── urls.py
-│   │   ├── templates/
-│   │   │   └── index.html
+│   ├── media/   
+│   ├── static/classificador/ 
+│   │   ├── bixos.jpg
+│   │   └── style.css
+│   ├── .gitattributes
+│   ├── .gitignore
+│   ├── db.sqlite3
 │   ├── manage.py
 │   ├── modelo_vgg16.pth
-│   └── requirements.txt
-```
+│   ├── requirements.txt
+│   └── treinar_modelo_vgg16.py
+'''
 
 ## Como Executar o Projeto
 
@@ -51,8 +68,8 @@ Certifique-se de que você tem o Python instalado em seu sistema.
 ### 1\. Clonar o Repositório
 
 ```bash
-git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
-cd SEU-REPOSITORIO
+git clone https://github.com/otaviozdc/classificador_cachorro_gato.git
+cd classificador_cachorro_gato
 ```
 
 ### 2\. Instalar as Dependências
