@@ -1,0 +1,4 @@
+Django
+torch
+torchvision
+Pillow

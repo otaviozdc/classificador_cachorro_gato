@@ -1,0 +1,8 @@
+# Pastas e arquivos do Django/Python
+__pycache__/
+*.pyc
+.DS_Store
+
+# Arquivos de banco de dados e mídia
+db.sqlite3
+media/

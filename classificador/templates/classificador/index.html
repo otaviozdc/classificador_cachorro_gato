@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador de Gatos e Cachorros</title>
+    <link rel="stylesheet" href="{% static 'classificador/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>Classificador de Gatos e Cachorros</h2>
+        <p>Faça o upload de uma imagem e descubra se é um gato ou um cachorro!</p>
+    </header>
+
+    <main>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input id="file-upload" type="file" name="imagem" accept="image/*" required>
+            <label for="file-upload" class="custom-file-upload">Escolher Imagem</label>
+            <span id="file-name" style="margin-left: 10px;">Nenhum arquivo selecionado</span>
+            <button type="submit">Classificar</button>
+        </form>
+
+        <div id="resultado">
+            {% if resultado %}
+                <hr>
+                <img src="{{ imagem_url }}" alt="Imagem enviada">
+                <h3>Resultado:</h3>
+                <p>Esta imagem contém um {{ resultado }}.</p>
+            {% endif %}
+        </div>
+
+        {% if not resultado %}
+            <img src="{% static 'classificador/bixos.jpg' %}" alt="bixos">
+        {% endif %}
+    </main>
+
+    <footer>
+        <p>Projeto de Classificação de Imagens com Machine Learning</p>
+    </footer>
+
+    <script>
+        const fileUpload = document.getElementById('file-upload');
+        const fileName = document.getElementById('file-name');
+
+        fileUpload.addEventListener('change', function() {
+            if (this.files.length > 0) {
+                fileName.textContent = this.files[0].name;
+            } else {
+                fileName.textContent = 'Nenhum arquivo selecionado'
+            }
+        });
+    </script>
+</body>
+</html>
