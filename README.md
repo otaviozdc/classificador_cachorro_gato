@@ -23,13 +23,13 @@ Este projeto é uma aplicação web simples que utiliza técnicas de **Deep Lear
 
 ```
 .
-├── classificador\_cachorro\_gato/         \# Pasta raiz do projeto
-│   ├── classificador/                   \# Seu aplicativo Django
+├── classificador\_cachorro\_gato/    
+│   ├── classificador/                
 │   │   ├── **pycache**/
 │   │   ├── migrations/
 │   │   ├── static/
 │   │   ├── templates/
-│   │   │   └── classificador/           \# Sua pasta de templates
+│   │   │   └── classificador/           
 │   │   ├── **init**.py
 │   │   ├── admin.py
 │   │   ├── apps.py
@@ -37,24 +37,24 @@ Este projeto é uma aplicação web simples que utiliza técnicas de **Deep Lear
 │   │   ├── tests.py
 │   │   ├── urls.py
 │   │   └── views.py
-│   ├── classificador\_cachorro\_gato/     \# Pasta de configurações do projeto
+│   ├── classificador\_cachorro\_gato/     
 │   │   ├── **pycache**/
 │   │   ├── **init**.py
 │   │   ├── asgi.py
 │   │   ├── settings.py
 │   │   ├── urls.py
 │   │   └── wsgi.py
-│   ├── media/                           \# Pasta para uploads de arquivos (mídia)
-│   ├── static/classificador/            \# Arquivos estáticos do aplicativo
+│   ├── media/                           
+│   ├── static/classificador/            
 │   │   ├── bixos.jpg
 │   │   └── style.css
-│   ├── .gitattributes                   \# Gerado pelo Git LFS
-│   ├── .gitignore                       \# Arquivos ignorados pelo Git
-│   ├── db.sqlite3                       \# Banco de dados SQLite
-│   ├── manage.py                        \# Script para gerenciar o projeto Django
-│   ├── modelo\_vgg16.pth                 \# Seu modelo PyTorch (rastreado pelo Git LFS)
-│   ├── requirements.txt                 \# Dependências do projeto
-│   └── treinar\_modelo\_vgg16.py          \# Script de treinamento do modelo (opcional, pode ser ignorado no .gitignore)
+│   ├── .gitattributes                  
+│   ├── .gitignore                       
+│   ├── db.sqlite3                       
+│   ├── manage.py                        
+│   ├── modelo\_vgg16.pth               
+│   ├── requirements.txt                
+│   └── treinar\_modelo\_vgg16.py         
 
 ```
 
