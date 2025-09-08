@@ -58,7 +58,7 @@ Este projeto é uma aplicação web simples que utiliza técnicas de **Deep Lear
 
 ```
 
-```
+
 ## Como Executar o Projeto
 
 Siga as instruções abaixo para configurar e rodar a aplicação em sua máquina local.
