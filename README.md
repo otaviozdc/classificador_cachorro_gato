@@ -21,42 +21,44 @@ Este projeto é uma aplicação web simples que utiliza técnicas de **Deep Lear
 
 ## Estrutura do Projeto
 
-'''
+```
 .
-├── classificador_cachorro_gato/
-│   ├── classificador/
-│   │   ├── pycache/
+├── classificador\_cachorro\_gato/         \# Pasta raiz do projeto
+│   ├── classificador/                   \# Seu aplicativo Django
+│   │   ├── **pycache**/
 │   │   ├── migrations/
 │   │   ├── static/
 │   │   ├── templates/
-│   │   │   └── classificador/ 
-│   │   ├── init.py
+│   │   │   └── classificador/           \# Sua pasta de templates
+│   │   ├── **init**.py
 │   │   ├── admin.py
 │   │   ├── apps.py
 │   │   ├── models.py
 │   │   ├── tests.py
 │   │   ├── urls.py
 │   │   └── views.py
-│   ├── classificador_cachorro_gato/
-│   │   ├── pycache/
-│   │   ├── init.py
+│   ├── classificador\_cachorro\_gato/     \# Pasta de configurações do projeto
+│   │   ├── **pycache**/
+│   │   ├── **init**.py
 │   │   ├── asgi.py
 │   │   ├── settings.py
 │   │   ├── urls.py
 │   │   └── wsgi.py
-│   ├── media/   
-│   ├── static/classificador/ 
+│   ├── media/                           \# Pasta para uploads de arquivos (mídia)
+│   ├── static/classificador/            \# Arquivos estáticos do aplicativo
 │   │   ├── bixos.jpg
 │   │   └── style.css
-│   ├── .gitattributes
-│   ├── .gitignore
-│   ├── db.sqlite3
-│   ├── manage.py
-│   ├── modelo_vgg16.pth
-│   ├── requirements.txt
-│   └── treinar_modelo_vgg16.py
-'''
+│   ├── .gitattributes                   \# Gerado pelo Git LFS
+│   ├── .gitignore                       \# Arquivos ignorados pelo Git
+│   ├── db.sqlite3                       \# Banco de dados SQLite
+│   ├── manage.py                        \# Script para gerenciar o projeto Django
+│   ├── modelo\_vgg16.pth                 \# Seu modelo PyTorch (rastreado pelo Git LFS)
+│   ├── requirements.txt                 \# Dependências do projeto
+│   └── treinar\_modelo\_vgg16.py          \# Script de treinamento do modelo (opcional, pode ser ignorado no .gitignore)
 
+```
+
+```
 ## Como Executar o Projeto
 
 Siga as instruções abaixo para configurar e rodar a aplicação em sua máquina local.
