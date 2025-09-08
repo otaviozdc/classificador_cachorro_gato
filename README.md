@@ -19,46 +19,6 @@ Este projeto é uma aplicação web simples que utiliza técnicas de **Deep Lear
   * **Classificação em Tempo Real:** A imagem é processada e o resultado da classificação (Cão ou Gato) é exibido na tela.
   * **Transfer Learning:** Utiliza um modelo VGG16 pré-treinado em um grande dataset, adaptando-o para a tarefa de classificação específica, o que permite alcançar alta precisão com menos dados e poder computacional.
 
-## Estrutura do Projeto
-
-```
-.
-├── classificador\_cachorro\_gato/    
-│   ├── classificador/                
-│   │   ├── **pycache**/
-│   │   ├── migrations/
-│   │   ├── static/
-│   │   ├── templates/
-│   │   │   └── classificador/           
-│   │   ├── **init**.py
-│   │   ├── admin.py
-│   │   ├── apps.py
-│   │   ├── models.py
-│   │   ├── tests.py
-│   │   ├── urls.py
-│   │   └── views.py
-│   ├── classificador\_cachorro\_gato/     
-│   │   ├── **pycache**/
-│   │   ├── **init**.py
-│   │   ├── asgi.py
-│   │   ├── settings.py
-│   │   ├── urls.py
-│   │   └── wsgi.py
-│   ├── media/                           
-│   ├── static/classificador/            
-│   │   ├── bixos.jpg
-│   │   └── style.css
-│   ├── .gitattributes                  
-│   ├── .gitignore                       
-│   ├── db.sqlite3                       
-│   ├── manage.py                        
-│   ├── modelo\_vgg16.pth               
-│   ├── requirements.txt                
-│   └── treinar\_modelo\_vgg16.py         
-
-```
-
-
 ## Como Executar o Projeto
 
 Siga as instruções abaixo para configurar e rodar a aplicação em sua máquina local.
